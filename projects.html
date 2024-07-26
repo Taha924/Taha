@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>My Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwright:ital,wght@0,100..400;1,100..400&display=swap');
+        body {
+            font-family: 'Playwright', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #333;
+            color: #fff;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navigation a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 30px;
+            background-color: #f4f4f4;
+        }
+        .main div {
+            max-width: 50%;
+        }
+        .main h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .main h2 span {
+            color: #555;
+            font-size: 24px;
+        }
+        .mbtn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .sicons a {
+            color: #333;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+        .skills {
+            padding: 50px 30px;
+            background-color: #fff;
+        }
+        .hskills {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .card {
+            width: 200px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card .icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .cardcontent h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .projContent {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px 0;
+        }
+        .projContent .card {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .projContent .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            padding: 20px 30px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+        footer .navigation a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .paragraph {
+            margin-bottom: 10px;
+        }
+        .icon1, .icon2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon1 i {
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">testing Doe</a>
+        <nav class="navigation">
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div>
+            <h2>Hello, I'm [John Doe]<br> <span>I'm a software Developer</span><br> <span>I build amazing programs and websites</span></h2>
+            <a href="#projects" class="mbtn">View My Work</a>
+        </div>
+        <div class="sicons">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </section>
+
+    <section class="skills" id="services">
+        <h2 class="hskills">Skills</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon"><i class="fas fa-code"></i></div>
+                <div class="cardcontent">
+                    <h3>Web Development</h3>
+                    <p>Create & Develop Websites using HTML & CSS</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-gamepad"></i></div>
+                <div class="cardcontent">
+                    <h3>Game Development</h3>
+                    <p>Create & Develop fun games</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h3>Projects</h3>
+        <div class="projContent">
+            <div class="card">
+                <div><img src="" alt="Project Image"></div>
+                <div>
+                    <p>Project Name</p>
+                    <div><a href="projects.html">Click here</a><span>Project Name</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav class="navigation">
+            <div class="paragraph">
+                <p>copyright@ischool</p>
+            </div>
+            <div class="icon1">
+                <i class="fa-solid fa-greater-than"></i>
+                <p>powered </p>
+                <i class="fa-solid fa-code"></i>
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="icon2">
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,239 @@
+/* إعادة تعيين القيم الافتراضية للمسافات والحشوات */
+* {
+    padding: 0; /* إزالة الحشوة الافتراضية */
+    margin: 0; /* إزالة المسافات الافتراضية */
+    box-sizing: border-box; /* تضمين الحشوة والحدود ضمن الأبعاد الإجمالية للعناصر */
+}
+
+/* تنسيق ترويسة الموقع */
+header {
+    display: flex; /* استخدام Flexbox لتخطيط العناصر */
+    justify-content: space-between; /* توزيع العناصر بالتساوي مع وجود مسافة بينها */
+    align-items: center; /* توسيط العناصر عموديًا */
+    position: fixed; /* تثبيت الترويسة في أعلى الصفحة */
+    width: 100%; /* تعيين عرض الترويسة ليكون 100% من عرض الصفحة */
+    background-color: white; /* لون خلفية الترويسة */
+    padding: 15px; /* إضافة حشوة للترويسة */
+    font-family: "Playwrite GB S", cursive; /* تعيين خط النص للترويسة */
+}
+
+/* تنسيق شعار الموقع */
+.logo {
+    color: rgb(18, 131, 184); /* لون النص للشعار */
+    text-decoration: none; /* إزالة التزيين من النص */
+    font-size: 30px; /* حجم الخط للشعار */
+}
+
+/* تنسيق الروابط في قائمة التنقل */
+.navigation a {
+    text-decoration: none; /* إزالة التزيين من النص */
+    margin-right: 10px; /* إضافة مسافة على اليمين */
+    color: rgb(18, 131, 184); /* لون النص للرابط */
+    font-size: 24px; /* حجم الخط للرابط */
+}
+
+/* تغيير لون الروابط عند التمرير فوقها */
+header a:hover {
+    color: rgb(18, 131, 184); /* لون النص عند التمرير */
+}
+
+/* تنسيق الأقسام */
+section {
+    padding: 100px 200px; /* إضافة حشوة للأقسام */
+}
+
+/* تنسيق القسم الرئيسي */
+.main {
+    width: 100%; /* عرض القسم الرئيسي يكون 100% من عرض الصفحة */
+    min-height: 500px; /* تعيين الحد الأدنى لارتفاع القسم */
+    display: flex; /* استخدام Flexbox لتخطيط العناصر داخل القسم */
+    flex-direction: column; /* جعل العناصر تتكدس عموديًا */
+    align-items: start; /* محاذاة العناصر إلى اليسار */
+    background-image: url('Pics/background.png'); /* تعيين صورة خلفية للقسم */
+    background-size: cover; /* جعل صورة الخلفية تغطي كامل القسم */
+    background-position: center; /* توسيط صورة الخلفية */
+    background-attachment: fixed; /* تثبيت صورة الخلفية عند التمرير */
+}
+
+/* تنسيق النصوص */
+span {
+    display: inline-block; /* عرض النص ككتلة داخلية */
+    margin: 10px; /* إضافة مسافة حول النص */
+    color: rgb(118, 118, 234); /* لون النص */
+    font-size: 60px; /* حجم الخط */
+}
+
+h2, h3 {
+    color: #fff; /* لون النص */
+    margin: 10px; /* إضافة مسافة حول النص */
+    font-family: "Playwrite GB S", cursive; /* تعيين خط النص */
+}
+
+/* تنسيق رموز التواصل الاجتماعي */
+.sicons {
+    margin: 10px; /* إضافة مسافة حول الرموز */
+}
+
+.sicons a {
+    margin: 10px; /* إضافة مسافة حول الروابط */
+    text-decoration: none; /* إزالة التزيين من النص */
+}
+.li{
+    color: #0077B5
+}
+.yo{
+    color: rgb(255, 0, 51);
+}
+.x{
+    color: #000;
+}
+.wa{
+  color: #42a81a;
+}
+.git{
+    color: #000;
+}
+
+
+/* تنسيق الأزرار */
+.mbtn {
+    color: white; /* لون النص للزر */
+    font-size: 30px; /* حجم الخط */
+    background-color: rgb(55, 55, 158); /* لون خلفية الزر */
+    text-decoration: none; /* إزالة التزيين من النص */
+    display: inline-block; /* عرض الزر ككتلة داخلية */
+    padding: 10px; /* إضافة حشوة داخل الزر */
+    letter-spacing: 1px; /* تباعد بين الأحرف */
+    border-radius: 15px; /* إضافة حواف دائرية للزر */
+    transition: 1s; /* تأثير الانتقال عند التفاعل مع الزر */
+}
+
+.mbtn:hover {
+    background-color: blue; /* تغيير لون خلفية الزر عند التمرير */
+    transform: scale(1.1); /* تكبير الزر عند التمرير */
+}
+
+/* تنسيق العناوين */
+.hskills {
+    text-align: center; /* محاذاة النص إلى الوسط */
+    color: rgb(55, 55, 158); /* لون النص */
+}
+
+/* تنسيق البطاقات */
+.card {
+    background: linear-gradient(to right, red, blue); /* تدرج لوني لخلفية البطاقة */
+    background-color: palevioletred; /* لون خلفية البطاقة */
+    text-align: center; /* محاذاة النص إلى الوسط */
+    border: 3px solid brown; /* إطار البطاقة */
+    margin: 10px; /* إضافة مسافة حول البطاقة */
+    padding: 10px; /* إضافة حشوة داخل البطاقة */
+    width: 300px; /* عرض البطاقة */
+    transition: 1s; /* تأثير الانتقال عند التفاعل مع البطاقة */
+    border-radius: 10px; /* إضافة حواف دائرية للبطاقة */
+}
+
+/* تنسيق الحاوية */
+.content {
+    display: flex; /* استخدام Flexbox لتخطيط العناصر داخل الحاوية */
+    justify-content: center; /* توسيط العناصر داخل الحاوية */
+    flex-direction: row; /* ترتيب العناصر أفقيًا */
+    flex-wrap: wrap; /* السماح بتفاف العناصر لتلائم الحاوية */
+}
+
+/* تأثير التمرير على البطاقات */
+.card:hover {
+    transform: scale(1.1); /* تكبير البطاقة عند التمرير */
+    background-color: wheat; /* تغيير لون خلفية البطاقة عند التمرير */
+    color: brown; /* تغيير لون النص عند التمرير */
+    border: 3px dashed palevioletred; /* تغيير نوع ولون الإطار عند التمرير */
+}
+
+/* تنسيق الأيقونات */
+.icon {
+    font-size: 30px; /* حجم الأيقونة */
+}
+
+i {
+    font-size: 30px; /* حجم الأيقونة */
+}
+
+/* تنسيق المحتوى داخل الأقسام */
+.projContent {
+    font-family: "Playwrite GB S", cursive; /* تعيين خط النص */
+    display: flex; /* استخدام Flexbox لتخطيط العناصر داخل القسم */
+    justify-content: center; /* توسيط العناصر داخل القسم */
+    flex-direction: row; /* ترتيب العناصر أفقيًا */
+    flex-wrap: wrap; /* السماح بتفاف العناصر لتلائم الحاوية */
+}
+
+/* تنسيق الفوتر */
+footer {
+    background-color: rgb(9, 9, 80); /* لون خلفية الفوتر */
+    display: flex; /* استخدام Flexbox لتخطيط العناصر داخل الفوتر */
+    justify-content: space-between; /* توزيع العناصر بالتساوي مع وجود مسافة بينها */
+    padding: 10px 0; /* إضافة حشوة للفوتر */
+    color: white; /* لون النص للفوتر */
+    text-align: center; /* محاذاة النص إلى الوسط */
+    
+}
+
+.footer-content {
+    display: flex; /* استخدام Flexbox لتخطيط العناصر داخل المحتوى */
+    flex-direction: column; /* ترتيب العناصر عموديًا */
+    align-items: center; /* توسيط العناصر أفقيًا */
+    justify-content: center; /* توسيط العناصر عموديًا */
+}
+
+.footer-content p {
+    margin: 5px 0; /* إضافة مسافة حول الفقرات */
+}
+.sicons1{
+    color: #ffffff;
+}
+
+/* استعلامات الوسائط للشاشات الصغيرة */
+@media (max-width: 1023px) {
+    header {
+        padding: 12px 20px; /* تغيير الحشوة للترويسة للشاشات الصغيرة */
+    }
+
+    .navigation a {
+        padding-left: 10px; /* تغيير الحشوة للروابط في التنقل للشاشات الصغيرة */
+    }
+
+    .title {
+        font-size: 1.8em; /* تغيير حجم الخط للعناوين للشاشات الصغيرة */
+    }
+
+    section {
+        padding: 80px 20px; /* تغيير الحشوة للأقسام للشاشات الصغيرة */
+    }
+
+    .main-content h2 {
+        font-size: 1em; /* تغيير حجم الخط للعناوين للشاشات الصغيرة */
+    }
+
+    .main-content h3 {
+        font-size: 1.6em; /* تغيير حجم الخط للعناوين الفرعية للشاشات الصغيرة */
+    }
+
+    .content {
+        flex-direction: column; /* تغيير ترتيب العناصر لتكون عموديًا للشاشات الصغيرة */
+        align-items: center; /* توسيط العناصر للشاشات الصغيرة */
+    }
+}
+
+@media (max-width: 641px) {
+    body {
+        font-size: 12px; /* تغيير حجم الخط للجسم للشاشات الأصغر */
+    }
+
+    .main-content h2 {
+        font-size: 0.8em; /* تغيير حجم الخط للعناوين للشاشات الأصغر */
+    }
+
+    .main-content h3 {
+        font-size: 1.4em; /* تغيير حجم الخط للعناوين الفرعية للشاشات الأصغر */
+    }
+    
+}
